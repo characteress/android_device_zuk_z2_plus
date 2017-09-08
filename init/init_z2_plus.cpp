@@ -33,9 +33,10 @@
 #include <sys/sysinfo.h>
 #include <cutils/properties.h>
 #include "vendor_init.h"
-#include "log.h"
-#include "util.h"
 
+#include <android-base/properties.h>
+
+using android::base::GetProperty;
 static void init_alarm_boot_properties()
 {
     int boot_reason;
