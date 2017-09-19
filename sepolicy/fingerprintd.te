@@ -14,3 +14,5 @@ allow fingerprintd system_data_file:sock_file unlink;
 allow fingerprintd system_data_file:dir add_name;
 allow fingerprintd system_data_file:sock_file create;
 allow fingerprintd system_data_file:sock_file setattr;
+allow tee fingerprintd_data_file:dir rw_dir_perms;
+allow tee fingerprintd_data_file:file create_file_perms;
