@@ -255,6 +255,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.msm8996
 
+# Offline charging
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.enable_boot_charger_mode=1 
+
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
