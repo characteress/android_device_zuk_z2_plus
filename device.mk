@@ -112,9 +112,6 @@ PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:/system/etc/usb_audio_policy_configuration.xml
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 TARGET_USES_SNAP_CAMERA := true
 
 # Connectivity Engine support (CNE)
