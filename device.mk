@@ -113,8 +113,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/apk/OnePlusCamera-V8-siankatabg.apk:system/app/priv-OnePlusCamera/OnePlusCamera-V8-siankatabg.apk \
-    $(LOCAL_PATH)/prebuilts/apk/OnePlusGallery-V8-siankatabg.apk:system/priv-app/OnePlusGallery/OnePlusGallery-V8-siankatabg.apk
+    $(LOCAL_PATH)/prebuilts/apk/OnePlusCamera-V8-siankatabg.apk:system/priv-app/OnePlusCamera/OnePlusCamera.apk \
+    $(LOCAL_PATH)/prebuilts/apk/OnePlusGallery-V8-siankatabg.apk:system/priv-app/OnePlusGallery/OnePlusGallery.apk
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
