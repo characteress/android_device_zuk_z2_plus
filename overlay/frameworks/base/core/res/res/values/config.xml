@@ -477,7 +477,7 @@
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
 
     <!-- Whether home button can wake device -->
-    <bool name="config_homeCanWake">true</bool>
+    <!--bool name="config_homeCanWake">true</bool> -->
 
     <!-- Night Display -->
     <bool name="config_nightDisplayAvailable">true</bool>
