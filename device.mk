@@ -285,3 +285,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat
 
+#Package Installer
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/apk/PackageInstaller.apk:system/priv-app/PackageInstaller/PackageInstaller.apk
