@@ -12,6 +12,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+IS_ARM64 := true
+
+# Include Official OTA Package
+WITH_OFFICIALOTA := true
 
 # Include pure telephony configuration
 $(call inherit-product, vendor/pure/configs/pure_phone.mk)
@@ -23,10 +27,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2_plus device
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
-$(call inherit-product-if-exists, vendor/zuk/z2_plus/z2_plus-vendor.mk)
 
 
-PRODUCT_NAME := aosp_z2_plus
+PRODUCT_NAME := z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
@@ -44,3 +47,5 @@ TARGET_VENDOR := zuk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="ZUK/z2_plus/z2_plus:7.0/NRD90M/2.5.412_170428:user/release-keys" \
     PRIVATE_BUILD_DESC="z2_plus-user 7.0 NRD90M 2.5.412_170428 release-keys"
+		
+$(call inherit-product-if-exists, vendor/zuk/z2_plus/z2_plus-vendor.mk)
