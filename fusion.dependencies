@@ -16,11 +16,5 @@
     "repository"  : "OctopusParty/proprietary_vendor_zuk_z2_plus",
     "target_path" : "vendor/zuk/z2_plus",
     "revision"    : "n-mr2"
- },
- {
-    "remote"      : "github",
-    "repository"  : "davidevinavil/android_vendor_qcom_binaries",
-    "target_path" : "vendor/qcom/binaries",
-    "revision"    : "n7x-caf"
  }
 ]

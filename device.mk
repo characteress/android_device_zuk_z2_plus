@@ -112,10 +112,10 @@ PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:/system/etc/usb_audio_policy_configuration.xml
 
 # Camera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/apk/OnePlusCamera-V8-siankatabg.apk:system/priv-app/OnePlusCamera/OnePlusCamera.apk \
-    $(LOCAL_PATH)/prebuilts/apk/OnePlusGallery-V8-siankatabg.apk:system/priv-app/OnePlusGallery/OnePlusGallery.apk
+PRODUCT_PACKAGES += \
+    Snap
 
+TARGET_USES_SNAP_CAMERA := true
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     cneapiclient \
