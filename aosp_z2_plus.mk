@@ -18,7 +18,7 @@ IS_ARM64 := true
 WITH_OFFICIALOTA := true
 
 # Include pure telephony configuration
-$(call inherit-product, vendor/pure/configs/pure_phone.mk)
+$(call inherit-product, vendor/screwd/main.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
