@@ -12,13 +12,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-IS_ARM64 := true
-
-# Include Official OTA Package
-WITH_OFFICIALOTA := true
 
 # Include pure telephony configuration
-$(call inherit-product, vendor/pure/configs/pure_phone.mk)
+$(call inherit-product, vendor/screwd/main.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -29,7 +25,7 @@ $(call inherit-product, device/zuk/z2_plus/device.mk)
 
 
 
-PRODUCT_NAME := z2_plus
+PRODUCT_NAME := screwd_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
